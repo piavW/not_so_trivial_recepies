@@ -7,7 +7,7 @@ Feature: User can log in to their account
     Given the following user exists
       | email         | password |
       | berg@sten.com | password |
-    And I visit the landing page
+    Given I visit the home page
     And I click "Login"
 
   Scenario: User can login [Happy Path]
