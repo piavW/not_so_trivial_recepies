@@ -14,7 +14,6 @@ module FoodService
         }
       )
       recipes = JSON.parse(response)
-      binding.pry
     end
   end
 end
