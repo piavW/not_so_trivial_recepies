@@ -20,3 +20,10 @@ body {
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
 }
+/* Styling of Devise forms */
+.Div-devise{
+  margin: 150px;
+  border-radius: 3px;
+  border:2px solid #4e6096;
+  background-color: rgb(254, 250, 250);
+}
