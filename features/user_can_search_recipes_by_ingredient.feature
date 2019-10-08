@@ -5,8 +5,10 @@ Feature: User can view some recipes
 
   Scenario: 
     Given I visit the home page
-    And I fill in the field with "apples"
+    When I fill in "Search" field with "apples"
     Then I click "Submit"
     And I should see "Recipes List"
     And I should see "Apricot Glazed Apple Tart"
     And I should see "Apple Or Peach Strudel"
+
+    
