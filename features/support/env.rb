@@ -10,7 +10,6 @@ rescue NameError
 end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
-
 Before '@get_recipes' do
 
   # to get the reponse from the api to ur fixture file run:
