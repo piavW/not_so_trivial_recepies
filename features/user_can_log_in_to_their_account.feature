@@ -7,10 +7,8 @@ Feature: User can log in to their account
     Given the following user exists
       | email         | password |
       | berg@sten.com | password |
-
     And I visit the landing page
     And I click "Login"
-
 
   Scenario: User can login [Happy Path]
     When I fill in "Email" with "berg@sten.com"
