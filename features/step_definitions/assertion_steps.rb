@@ -1,7 +1,3 @@
-Then("I would like to see {string}") do |string|
-  
-end
-
-Then("I should see {string}") do |string|
-  
+Then("I would like to see {string}") do |content|
+  expect(page).to have_content content
 end

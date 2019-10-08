@@ -7,6 +7,6 @@ Feature: User can view some recipes
     Given I visit the home page
     And I fill in the field with "apples"
     Then I click "Submit"
-    Then I would like to see "Recipes List"
+    And I should see "Recipes List"
     And I should see "Apricot Glazed Apple Tart"
     And I should see "Apple Or Peach Strudel"
