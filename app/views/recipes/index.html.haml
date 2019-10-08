@@ -1,5 +1,6 @@
 %h2 Recipes
 %h4 Search by ingredient:
+
 = form_tag(recipes_path, method: :get) do
   = text_field_tag(:search, params[:search], placeholder: "Search")
   = submit_tag ("Submit")

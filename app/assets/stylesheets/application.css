@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+ h2 { 
+   color: #8be2a8; 
+   font-family: 'Raleway',sans-serif; 
+   font-size: 62px; 
+   font-weight: 800; 
+   line-height: 72px; 
+   margin: 0 0 24px; 
+   text-align: center; 
+   text-transform: uppercase;
+  }
+ h4 { 
+   color: #9acef1; 
+   font-family: 'Raleway',sans-serif; 
+   font-size: 30px; 
+   font-weight: 800; 
+   line-height: 36px; 
+   margin: 0 0 24px; 
+   text-align: center; 
+  }
+  form { color: #a3baeb; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+  }
+  input#search { color: #a3baeb; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 500; 
+    line-height: 32px; 
+  }
