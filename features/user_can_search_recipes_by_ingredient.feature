@@ -11,5 +11,3 @@ Feature: User can search for recipes
     Then I should see "Recipes List"
     And I should see "2 Ingredient Instant Pot Applesauce"
     And I should see "Dried Apples"
-
-    

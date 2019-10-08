@@ -6,7 +6,7 @@
   = submit_tag ("Submit")
 
 - if @recipes.nil?
-  %p Please search for ingredient
+  %h3 Please search for ingredient
 - else
   - @recipes.each do |recipe|
-    %h2= recipe["title"]
+    %h3= recipe["title"]

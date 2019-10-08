@@ -23,6 +23,15 @@
    text-align: center; 
    text-transform: uppercase;
   }
+ h3 { 
+    color: #aad6f3; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 700; 
+    line-height: 32px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+  }
  h4 { 
    color: #9acef1; 
    font-family: 'Raleway',sans-serif; 
@@ -32,7 +41,8 @@
    margin: 0 0 24px; 
    text-align: center; 
   }
-  form { color: #a3baeb; 
+  form { 
+    color: #a3baeb; 
     font-family: 'Raleway',sans-serif; 
     font-size: 18px; 
     font-weight: 500; 
@@ -40,9 +50,17 @@
     margin: 0 0 24px; 
     text-align: center; 
   }
-  input#search { color: #a3baeb; 
+  input#search { 
+    color: #a3baeb; 
     font-family: 'Raleway',sans-serif; 
     font-size: 18px; 
     font-weight: 500; 
+    line-height: 32px; 
+  }
+  input { 
+    color: #3a4357; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 00; 
     line-height: 32px; 
   }
