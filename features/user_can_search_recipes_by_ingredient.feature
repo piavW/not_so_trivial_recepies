@@ -1,3 +1,4 @@
+@get_recipes
 Feature: User can search for recipes
   As a user
   In order to find a recipe
@@ -6,9 +7,9 @@ Feature: User can search for recipes
   Scenario: User can search by ingredient
     Given I visit the home page
     When I fill in "Search" field with "apples"
-    Then I click "Submit"
-    And I should see "Recipes List"
-    And I should see "Apricot Glazed Apple Tart"
-    And I should see "Apple Or Peach Strudel"
+    And I click "Submit"
+    Then I should see "Recipes List"
+    And I should see "2 Ingredient Instant Pot Applesauce"
+    And I should see "Dried Apples"
 
     

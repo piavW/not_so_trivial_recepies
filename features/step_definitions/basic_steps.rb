@@ -2,7 +2,7 @@ Given("I visit the home page") do
   visit root_path
 end
 
-Then("I click {string}") do |element|
+When("I click {string}") do |element|
   click_on element
 end
 
