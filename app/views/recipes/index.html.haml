@@ -1,12 +1,12 @@
 %h2 Recipes List
-%h4 Search by ingredient:
+%h4 What's in your fridge?
 
 = form_tag(recipes_path, method: :get) do
   = text_field_tag(:search, params[:search], placeholder: "Search")
   = submit_tag ("Submit")
 
 - if @recipes.nil?
-  %h3 Please search for ingredient
+  %h3 Type your ingredients above.
 - else
   - @recipes.each do |recipe|
     %h3= recipe["title"]
