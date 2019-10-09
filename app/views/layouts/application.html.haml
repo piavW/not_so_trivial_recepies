@@ -7,29 +7,7 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    :javascript
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '2648880478676417',
-          xfbml      : true,
-          version    : 'v4.0'
-        });
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    :javascript
-      FB.getLoginStatus
-      #fb-root
-      %script{:async => "", :crossorigin => "anonymous", :defer => "defer", :src => "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=2648880478676417"}
-
-    - if user_signed_in?
+     - if user_signed_in?
       Logged in as 
       = succeed "." do 
         %strong= current_user.email 
@@ -37,8 +15,7 @@
     - else 
       = link_to "Sign up here", new_user_registration_path, class: 'navbar-link'
       \#{link_to "Login", new_user_session_path, class: 'navbar-link'}
-      %button#oauthlogin.fb-login-button{"data-auto-logout-link": "false", "data-button-type": "continue_with", "data-size": "small", "data-use-continue-as": "false", "data-width": ""}
-    
+      
     %p.notice= notice
     %p.alert= alert
 
