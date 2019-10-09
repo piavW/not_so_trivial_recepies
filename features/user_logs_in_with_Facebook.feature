@@ -8,9 +8,9 @@ Feature: User logs in with Facebook
     Given I visit the landing page
 
   Scenario: User can log in with Facebook authorization
-    Given I click "Continue with Facebook"
-    And I click "OK" to accept the read permissions
-    And I click "OK" again to accept write permissions 
-    And I go to app settings and verify that the granted permissions are true
+    Given I click "oauthlogin"
+    And I fill in "Email or Phone" with "ehtermkrai_1570549278@tfbnw.net"
+    And I fill in "Password" with "FakePassw0rd"
+    And I click "Log In"
     Then I should see "Logged in as ?"
 
