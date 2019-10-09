@@ -26,6 +26,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'webmock'
   gem 'selenium-webdriver'
+  gem 'geckodriver-helper', '~> 0.0.3'
 end
 
 group :development do
