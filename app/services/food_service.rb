@@ -14,6 +14,12 @@ module FoodService
         }
       )
       recipes = JSON.parse(response)
+
+      if recipes == []
+        "error"
+      else
+        recipes
+      end
     end
   end
 end
