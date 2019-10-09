@@ -22,4 +22,17 @@ module FoodService
       end
     end
   end
+
+  def self.get_single_recipe(query)
+    response = RestClient.get(
+      'https://api.spoonacular.com/recipes/324694/analyzedInstructions',
+      {
+        params: {
+          apiKey: Rails.application.credentials.food_api[:api_key],
+          id: query
+        }
+      }
+    )
+    recipes = JSON.parse(response)
+  end
 end
