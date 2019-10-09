@@ -9,9 +9,9 @@ Feature: User logs in with Facebook
 @javascript
   Scenario: User can log in with Facebook authorization
     Given I click "oauthlogin"
-    When member login with Facebook
-    # And I go to popup
-    # And I fill in "Email or Phone" with "ehtermkrai_1570549278@tfbnw.net"
-    # And I fill in "Password" with "FakePassw0rd"
-    # And I click "Log In"
+    # When member login with Facebook
+    And I go to popup
+    And I fill in "Email or Phone" with "ehtermkrai_1570549278@tfbnw.net"
+    And I fill in "Password" with "FakePassw0rd"
+    And I click "Log In"
     Then I should see "Logged in as ehtermkrai_1570549278@tfbnw.net"
