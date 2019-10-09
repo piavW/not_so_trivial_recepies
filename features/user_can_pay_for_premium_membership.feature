@@ -8,7 +8,7 @@ Feature: User can pay for premium membership
     | email         |
     | berg@sten.com |
   And I am logged in as "berg@sten.com"
-  And I visit the landing page
+  And I visit the home page
 
   Scenario: User can pay for membership 
   When I click "Subscription"
