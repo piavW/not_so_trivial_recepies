@@ -3,6 +3,10 @@ class RecipesController < ApplicationController
     @recipes = FoodService.get_recipes(params[:search])
   end
 
+  def show
+    @recipes = FoodService.get_recipes(params[:search])
+  end
+
   private
 
   def recipe_params

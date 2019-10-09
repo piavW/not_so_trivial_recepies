@@ -12,3 +12,4 @@
 - else
   - @recipes.each do |recipe|
     %h2= recipe["title"]
+    = link_to 'Show', recipes_path(recipe)
