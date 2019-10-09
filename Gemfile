@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rest-client'
 gem 'devise'
 gem "haml-rails", "~> 1.0"
+gem 'stripe', '~> 1.57', '>= 1.57.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
