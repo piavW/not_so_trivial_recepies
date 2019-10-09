@@ -4,6 +4,7 @@ class RecipesController < ApplicationController
   end
 
   def show
+    @recipe = FoodService.get_single_recipe(params[:search])
   end
 
   private
