@@ -25,8 +25,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
-  gem 'selenium-webdriver'
-  gem 'geckodriver-helper', '~> 0.0.3'
+  gem 'omniauth-facebook'
 end
 
 group :development do
