@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rest-client'
 gem 'devise'
 gem "haml-rails", "~> 1.0"
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -25,7 +26,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
-  gem 'omniauth-facebook'
 end
 
 group :development do
