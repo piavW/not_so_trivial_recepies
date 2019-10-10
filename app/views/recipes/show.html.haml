@@ -5,7 +5,6 @@
     %img.card-media{src: @recipe['image'], alt: "No image to display"}
     %p 
     .card-read Recipe
-  
     - if @recipe['analyzedInstructions'] == []
       %span.card-description.subtle There is no intructions for this item
     - else

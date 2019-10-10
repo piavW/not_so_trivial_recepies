@@ -11,10 +11,6 @@ end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
 Before '@get_recipes' do
-
-  # to get the reponse from the api to ur fixture file run:
-  # curl "https://api.spoonacular.com/recipes/search?apiKey=your-api-key&number=5&query=cheese" -o features/support/fixtures/api_response_food_get_cheese.txt
-
   stub_request(:get, "https://api.spoonacular.com/recipes/findByIngredients").
   with(
     query: {

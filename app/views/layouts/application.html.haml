@@ -6,16 +6,15 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    - if user_signed_in?
-      Logged in as 
-      = succeed "." do 
-        %strong= current_user.email 
-      \#{link_to 'Logout', destroy_user_session_path, method: :delete, class: 'navbar-link'}
-    - else 
-      = link_to "Sign up here", new_user_registration_path, class: 'navbar-link'
-      \#{link_to "Login", new_user_session_path, class: 'navbar-link'}
-
-    %p.notice= notice
-    %p.alert= alert
-    = yield
+    %body
+      - if user_signed_in?
+        Logged in as 
+        = succeed "." do 
+          %strong= current_user.email 
+        %button.btn.draw-border= link_to "Logout", destroy_user_session_path, method: :delete
+      - else 
+        %button.btn.draw-border= link_to "Sign up here", new_user_registration_path
+        %button.btn.draw-border= link_to "Login", new_user_session_path
+      %p.notice= notice
+      %p.alert= alert
+      = yield

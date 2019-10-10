@@ -2,12 +2,13 @@
   .card.u-clearfix
     .card-body
     %h1 Let's Cook!
+    %img.w-full{src: "https://magnolia.com/wp-content/uploads/2017/12/image4-1.png", alt: "No image to display"}
     %h2 Choose from a list of recipes based on what you already have at home.
-    %h2 What's in your fridge?
+    %h4 What's in your fridge?
+    %p 
     = form_tag(recipes_path, method: :get) do
       = text_field_tag(:search, params[:search], placeholder: "Search")
       = submit_tag ("Submit")
-      %h1 Recipe List
     - if @recipes.nil?
       %p Please search for ingredient
     - elsif @recipes == 'error'
