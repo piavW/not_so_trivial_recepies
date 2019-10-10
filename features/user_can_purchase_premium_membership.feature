@@ -5,9 +5,13 @@ Feature: User can purchase premium membership
 
   Background:
     Given the following membership exist
-      | membership |
-      | premium    |
-    Given I visit the home page
+      | title   |
+      | premium |
+    And the following user exist
+      | email        |
+      | berg@mail.se |
+    And I am logged in as "berg"
+    And I visit the home page
     And I click "Subscription"
 
   Scenario:
