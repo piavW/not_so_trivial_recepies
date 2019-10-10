@@ -8,5 +8,5 @@ Feature: User can view full recipe
     Given I visit the home page
     When I fill in "Search" with "apples"
     And I click "Submit"
-    Then I click "Dried Apples"
-    And I should see "Position racks in the upper and lower third of the oven; preheat to 200F. Line 2 large baking sheets with parchment paper."
+    And I click "Dried Apples"
+    Then I should see "Position racks in the upper and lower third of the oven; preheat to 200F. Line 2 large baking sheets with parchment paper."
