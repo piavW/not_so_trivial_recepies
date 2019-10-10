@@ -3,5 +3,5 @@ Rails.application.routes.draw do
     omniauth_callbacks: :omniauth_callbacks
   }
   root controller: :recipes, action: :index
-  resources :recipes, only: [:index]
+  resources :recipes, only: [:index, :show]
 end
