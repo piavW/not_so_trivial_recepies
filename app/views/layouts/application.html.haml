@@ -15,6 +15,7 @@
       - else 
         %button.btn.draw-border= link_to "Sign up here", new_user_registration_path
         %button.btn.draw-border= link_to "Login", new_user_session_path
+        \#{link_to 'Login with Facebook', user_facebook_omniauth_authorize_path, class: 'navbar-link'}
       %p.notice= notice
       %p.alert= alert
       = yield
