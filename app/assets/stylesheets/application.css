@@ -1,59 +1,76 @@
+h1 { 
+  color: #50e7b5; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 30px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
 h2 { 
-   color: #8be2a8; 
-   font-family: 'Raleway',sans-serif; 
-   font-size: 62px; 
-   font-weight: 800; 
-   line-height: 72px; 
-   margin: 0 0 24px; 
-   text-align: center; 
-   text-transform: uppercase;
-  }
- h3 { 
-    color: #aad6f3; 
-    font-family: 'Raleway',sans-serif; 
-    font-size: 18px; 
-    font-weight: 700; 
-    line-height: 32px; 
-    margin: 0 0 24px; 
-    text-align: center; 
-  }
- h4 { 
-   color: #9acef1; 
-   font-family: 'Raleway',sans-serif; 
-   font-size: 30px; 
-   font-weight: 800; 
-   line-height: 36px; 
-   margin: 0 0 24px; 
-   text-align: center; 
-  }
-  form { 
-    color: #a3baeb; 
-    font-family: 'Raleway',sans-serif; 
-    font-size: 18px; 
-    font-weight: 500; 
-    line-height: 32px; 
-    margin: 0 0 24px; 
-    text-align: center; 
-  }
-  input#search { 
-    color: #a3baeb; 
-    font-family: 'Raleway',sans-serif; 
-    font-size: 18px; 
-    font-weight: 500; 
-    line-height: 32px; 
-  }
-  input { 
-    color: #3a4357; 
-    font-family: 'Raleway',sans-serif; 
-    font-size: 18px; 
-    font-weight: 00; 
-    line-height: 32px; 
-  }
-/* Basic styling of webpage */
+  color: #8be2a8; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 20px; 
+  font-weight: 500; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+h3 { 
+  color: #aad6f3; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 18px; 
+  font-weight: 700; 
+  line-height: 32px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+}
+h4 { 
+  color: #9acef1; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 30px; 
+  font-weight: 800; 
+  line-height: 36px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+}
+p { 
+  color: #367aa8; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 15px; 
+  font-weight: 400; 
+  line-height: 36px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+}
+form { 
+  color: #a3baeb; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 18px; 
+  font-weight: 500; 
+  line-height: 32px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+}
+input#search { 
+  color: #a3baeb; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 18px; 
+  font-weight: 500; 
+  line-height: 32px; 
+}
+input { 
+  color: #3a4357; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 18px; 
+  font-weight: 00; 
+  line-height: 32px; 
+}
 body {
   text-align: center;
 }
-/* Styling of links for Devise and future nav-bar */
 .navbar-link {
   margin: 0.5rem;
   box-shadow: 0px 0px 0px 2px #9fb4f2;
@@ -69,4 +86,10 @@ body {
   padding:8px 10px;
   text-decoration:none;
   text-shadow:0px 1px 0px #283966;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 }
