@@ -12,10 +12,10 @@ Given("I click {string}") do |element|
   click_on element
 end
 
-Given("I click on {string} for {string}") do |button_text, membership_title|
+Given("I click on {string} for {string} membership") do |button_text, membership_title|
   membership = Membership.find_by_title membership_title
   within("#membership_#{membership.id}") do
-  click_on button_text
+  click button_text
   end
 end
 
