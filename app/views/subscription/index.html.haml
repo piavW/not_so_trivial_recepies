@@ -7,7 +7,7 @@
       %span
         Amount: $#{@order.price}
   %script.stripe-button{"data-amount" => "#{@order.price}", 
-  "data-description" => "A month's subscription", 
-  "data-key" => "#{Rails.configuration.stripe[:pk_test_pRvKYv8G4tQ1xJytOKZ2dTRO00e5ZdTW6J]}", 
+  "data-description" => "A yearly subscription", 
+  "data-key" => "#{Rails.configuration.stripe[:publicKeyHere]}", 
   "data-locale" => "auto", 
   :src => "https://checkout.stripe.com/checkout.js"}
