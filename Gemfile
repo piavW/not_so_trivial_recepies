@@ -15,7 +15,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rest-client'
 gem 'devise'
 gem "haml-rails", "~> 1.0"
-gem 'stripe', '~> 1.57', '>= 1.57.1'
 gem 'omniauth-facebook'
 
 group :development, :test do
@@ -27,6 +26,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
+  gem 'webdriver'
 end
 
 group :development do

@@ -20,8 +20,4 @@
     
     %p.notice= notice
     %p.alert= alert
-    %script{:src => "https://js.stripe.com/v2/"}
-    :javascript
-      Stripe.setPublishableKey('pk_test_uR9GcPekr9XBwQaKt3OnPuxe00Drts28Dd');
-      %input{:name => "'stripeToken'", :type => "'hidden'"}
     = yield
