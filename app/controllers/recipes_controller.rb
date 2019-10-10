@@ -8,4 +8,4 @@ class RecipesController < ApplicationController
   def recipe_params
     params.require(:recipe).permit(:search)
   end
-end  
+end 

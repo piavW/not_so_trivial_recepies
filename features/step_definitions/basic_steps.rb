@@ -1,8 +1,8 @@
-Given("I visit the home page") do
+Given("I visit the landing page") do
   visit root_path
 end
 
-When("I click {string}") do |element|
+Given("I click {string}") do |element|
   click_on element
 end
 
