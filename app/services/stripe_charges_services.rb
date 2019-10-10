@@ -1,5 +1,5 @@
 class StripeChargesServices
-  DEFAULT_CURRENCY = 'sek'.freeze
+  DEFAULT_CURRENCY = ' '.freeze
   
   def initialize(params, user)
     @stripe_email = params[:stripeEmail]
