@@ -7,6 +7,7 @@ Feature: User can purchase premium membership
     Given the following membership exist
       | title   |
       | premium |
+      | silver  |
     And the following user exist
       | email        | password |
       | berg@mail.se | 12345678 |
