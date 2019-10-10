@@ -1,5 +1,5 @@
 %h1= @recipe['title']
-%img(src= "@recipe['image']")
+%img{src: @recipe['image'], alt: "No image to display"}
 
 - if @recipe['analyzedInstructions'] == []
   %p There is no intructions for this item
