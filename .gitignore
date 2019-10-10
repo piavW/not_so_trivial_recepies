@@ -10,3 +10,4 @@
 /public/assets
 .byebug_history
 /config/master.key
+/config/stripe_configuration_keys.yml
