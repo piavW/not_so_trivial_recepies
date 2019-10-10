@@ -11,3 +11,5 @@
 .byebug_history
 /config/master.key
 /config/stripe_configuration_keys.yml
+# Ignore master key for decrypting credentials and more.
+/config/master.key
