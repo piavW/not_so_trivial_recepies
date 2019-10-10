@@ -8,6 +8,7 @@ Feature: User can purchase premium membership
       | membership |
       | premium    |
     Given I visit the home page
+    And I click "Subscription"
 
   Scenario:
   Given I click on "Buy" for "premium membership"

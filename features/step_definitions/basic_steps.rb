@@ -8,6 +8,10 @@ Given("I visit the home page") do
   visit root_path
 end
 
+Given("I click {string}") do |element|
+  click_on element
+end
+
 Given("I click on {string} for {string}") do |button_text, membership_title|
   membership = Membership.find_by_title membership_title
   within("#membership_#{membership.id}") do
