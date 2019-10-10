@@ -8,9 +8,13 @@ Feature: User can purchase premium membership
       | title   |
       | premium |
     And the following user exist
-      | email        |
-      | berg@mail.se |
-    And I am logged in as "berg"
+      | email        | password |
+      | berg@mail.se | 12345678 |
+    And I visit the home page
+    And I click "Login"
+    And I fill in "Email" with "berg@mail.se"
+    And I fill in "Password" with "12345678"
+    And I click "Log in"
     And I visit the home page
     And I click "Subscription"
 
