@@ -15,7 +15,7 @@ end
 Given("I click on {string} for {string} membership") do |button_text, membership_title|
   membership = Membership.find_by_title membership_title
   within("#membership_#{membership.id}") do
-  click button_text
+  click_on button_text
   end
 end
 
