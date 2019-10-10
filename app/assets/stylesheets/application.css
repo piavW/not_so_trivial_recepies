@@ -56,17 +56,17 @@ body {
 /* Styling of links for Devise and future nav-bar */
 .navbar-link {
   margin: 0.5rem;
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
-  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-  background-color:#7892c2;
+  box-shadow: 0px 0px 0px 2px #020202;
+  background: #050505;
+  background-color:#ffffff;
   border-radius:10px;
-  border:1px solid #4e6096;
+  border:1px solid #ffffff;
   display:inline-block;
   cursor:pointer;
-  color:#ffffff;
+  color:#000000;
   font-family:Arial;
   font-size:12px;
   padding:8px 10px;
   text-decoration:none;
-  text-shadow:0px 1px 0px #283966;
+  text-shadow:0px 1px 0px #dcdee4;
 }
