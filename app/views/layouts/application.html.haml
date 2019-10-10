@@ -12,11 +12,15 @@
       = succeed "." do 
         %strong= current_user.email 
       \#{link_to 'Logout', destroy_user_session_path, method: :delete, class: 'navbar-link'}
-      \#{link_to "Subscription", '#', class: 'navbar-link'}
+      \#{link_to "Subscription", charges_path, class: 'navbar-link'}
     - else 
       = link_to "Sign up here", new_user_registration_path, class: 'navbar-link'
       \#{link_to "Login", new_user_session_path, class: 'navbar-link'}
 
     %p.notice= notice
     %p.alert= alert
+    %script{:src => "https://js.stripe.com/v2/"}
+    :javascript
+      Stripe.setPublishableKey('pk_test_uR9GcPekr9XBwQaKt3OnPuxe00Drts28Dd');
+      %input{:name => "'stripeToken'", :type => "'hidden'"}
     = yield
