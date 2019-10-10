@@ -1,14 +1,17 @@
-%h1 Recipes List
-%h4 What's in your fridge?
+.card-container
+  .card.u-clearfix
+    .card-body
+    %h1 Recipes List
+    %h4 What's in your fridge?
 
-= form_tag(recipes_path, method: :get) do
-  = text_field_tag(:search, params[:search], placeholder: "Search")
-  = submit_tag ("Submit")
+    = form_tag(recipes_path, method: :get) do
+      = text_field_tag(:search, params[:search], placeholder: "Search")
+      = submit_tag ("Submit")
 
-- if @recipes.nil?
-  %p Please search for ingredient
-- elsif @recipes == 'error' 
-  %p There is no recipe with that ingredient
-- else
-  - @recipes.each do |recipe|
-    %h2= link_to recipe["title"], recipe_path(recipe['id'], title: recipe['title'])
+    - if @recipes.nil?
+      %p Please search for ingredient
+    - elsif @recipes == 'error' 
+      %p There is no recipe with that ingredient
+    - else
+      - @recipes.each do |recipe|
+        %h2= link_to recipe["title"], recipe_path(recipe['id'], title: recipe['title'])

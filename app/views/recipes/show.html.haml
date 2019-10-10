@@ -1,13 +1,19 @@
 .card-container
   .card.u-clearfix
     .card-body
-    %h1= @recipe['title']
-    %img{src: @recipe['image'], alt: "No image to display"}
-
+    %h1.card-title= @recipe['title']
+    %img.card-media{src: @recipe['image'], alt: "No image to display"}
+    %p 
+    .card-read Recipe
+  
     - if @recipe['analyzedInstructions'] == []
-      %p There is no intructions for this item
+      %span.card-description.subtle There is no intructions for this item
     - else
       - @recipe['analyzedInstructions'].each do |instruction|
         - instruction['steps'].each do |step|
-          %p= step['step']
+          .left.column
+            %span.card-description.subtle= step['step']
+            %p
     = link_to 'Back', root_path
+    %p 
+    .card-shadow
