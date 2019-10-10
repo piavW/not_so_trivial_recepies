@@ -25,7 +25,7 @@ module FoodService
 
   def self.get_ingredients(id)
     response = RestClient.get(
-      'https://api.spoonacular.com/recipes/#{id}/information',
+      "https://api.spoonacular.com/recipes/#{id}/information",
       {
         params: {
           apiKey: Rails.application.credentials.food_api[:api_key],

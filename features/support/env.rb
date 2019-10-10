@@ -23,7 +23,6 @@ Before '@get_recipes' do
     }
   ).
   to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'food_api_response.json').read, headers: {})
-end 
 
   stub_request(:get, "https://api.spoonacular.com/recipes/936707/information").
   with(
@@ -32,4 +31,4 @@ end
     }
   ).
   to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'dried_apples_api_response.json').read, headers: {})
-  end
+end
