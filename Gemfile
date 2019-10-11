@@ -26,7 +26,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'webmock'
-  gem 'webdriver'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :development do
