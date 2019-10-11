@@ -6,7 +6,7 @@ Feature: User can purchase premium membership
   Background:
     Given the following membership exist
       | title   |
-      | premium |
+      | Premium |
       | silver  |
     And the following user exist
       | email        | password |
@@ -18,9 +18,10 @@ Feature: User can purchase premium membership
     And I click "Log in"
     And I visit the home page
     And I click "Subscription"
-
+  
+  @javascript
   Scenario:
-    Given I click on "Buy" for "premium" membership
+    Given I click on "Buy" for "Premium" membership
     Then I should be on purchase page
     And I fill in the Stripe field "CC Number" with "4242424242424242"
     And I fill in the Stripe field "Expiry date" with "01/2022"
