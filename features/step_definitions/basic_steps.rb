@@ -19,10 +19,6 @@ Given("I click on {string} for {string} membership") do |button_text, membership
   end
 end
 
-Then("I should be on purchase page") do
-  visit current_path
-end
-
 Then("I fill in the Stripe field {string} with {string}") do |field, value|
   fill_in "Field",	with: "value" 
 end

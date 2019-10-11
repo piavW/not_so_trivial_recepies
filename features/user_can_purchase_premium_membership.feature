@@ -20,10 +20,10 @@ Feature: User can purchase premium membership
     And I click "Subscription"
 
   Scenario:
-  Given I click on "Buy" for "premium" membership
-  Then I should be on purchase page
-  And I fill in the Stripe field "CC Number" with "4242424242424242"
-  And I fill in the Stripe field "Expiry date" with "01/2022"
-  And I fill in the Stripe field "CVC" with "123"
-  And I submit the Stripe form
-  Then I should see "Thank you!"
+    Given I click on "Buy" for "premium" membership
+    Then I should be on purchase page
+    And I fill in the Stripe field "CC Number" with "4242424242424242"
+    And I fill in the Stripe field "Expiry date" with "01/2022"
+    And I fill in the Stripe field "CVC" with "123"
+    And I submit the Stripe form
+    Then I should see "Thank you!"
