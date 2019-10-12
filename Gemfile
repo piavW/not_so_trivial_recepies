@@ -27,7 +27,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'webmock'
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 4.0'
 end
 
 group :development do
