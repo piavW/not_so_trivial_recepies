@@ -11,8 +11,15 @@ rescue NameError
   raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
 end
 
-Chromedriver.set_version '2.36'
-chrome_options = %w(no-sandbox disable-popup-blocking disable-infobars)
+Webdrivers::Chromedriver.required_version = 2.44
+chrome_options = %w[headless
+                    no-sandbox
+                    disable-popup-blocking
+                    disable-gpu
+                    disable-infobars
+                    disable-dev-shm-usage
+                    auto-open-devtools-for-tabs]
+
 Capybara.register_driver :chrome do |app|
   options = Selenium::WebDriver::Chrome::Options.new(
     args: chrome_options
