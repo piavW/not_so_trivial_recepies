@@ -1,9 +1,21 @@
-%h1
-  Payment = form_for #{@membership.title}
-  = form_with url: charges_path, local: true, method: :post, id: :charge_form do |form|
-    = form.hidden_field :membership_id, value: @membership.id
-    = form.text_field :email
-    #card-number
-    #card-expiry
-    #card-cvc
-    = form.submit 'Submit Payment'
+%h1 Payment form for #{@membership.title} Members!
+= form_with url: charges_path, local: true, method: :post, id: :charge_form do |form|
+  #card-number
+  #card-expiry
+  #card-cvc
+  = form.submit 'Submit Payment'
+
+  -#   = form_with url: charges_path, local: true, method: :post, id: :charge_form do |form|
+  -# #card-number
+  -# #card-expiry
+  -# #card-cvc
+  -# = form.submit 'Submit Payment'
+
+-# %h1 Payment form for #{@membership.title} Members!
+-# = form_with url: charges_path, local: true, method: :post, id: :charge_form do |form|
+-#   = form.hidden_field :membership_id, value: @membership.id
+-#   = form.text_field :email, {placeholder: "email"}
+-#   #card-number= form.text_field :cardNumber
+-#   #card-expiry= form.text_field :cardExpiry
+-#   #card-cvc= form.text_field :cardCvc
+-#   = form.submit 'Submit Payment'
