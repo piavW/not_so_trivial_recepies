@@ -15,6 +15,7 @@ Then("I fill in the Stripe field {string} with {string}") do |input_field, value
     frame_name = '#card-cvc div iframe'
     field_name = 'cvc'
   end
+  
   stripe_frame= find(frame_name)
   within_frame stripe_frame do
     page.driver.browser.find_element(name: field_name).send_keys(value)

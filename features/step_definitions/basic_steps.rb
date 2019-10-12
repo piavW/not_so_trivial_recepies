@@ -31,3 +31,7 @@ end
 Given("I fill in {string} with {string}") do |string, string2|
   fill_in string, with: string2
 end
+
+Then("I wait {int} seconds") do |seconds|
+  sleep seconds
+end
