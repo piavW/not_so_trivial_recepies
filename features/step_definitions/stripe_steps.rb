@@ -22,8 +22,9 @@ Then("I fill in the Stripe field {string} with {string}") do |input_field, value
   end
 end
 
+#OLD below! ---------------------------------------------
 # Then("I fill in the Stripe field {string} with {string}") do |input_field, value|
-#   stripe_frame = find("iframe[name='__privateStripeFrame5']")
+#   stripe_frame = find("iframe[name='__privateStripeFrame4']")
 #   case input_field
 #   when "CC Number"
 #     field = 'cardnumber'
