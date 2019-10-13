@@ -26,14 +26,16 @@ module Foodapp
 
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.stripe.publishable_key = Rails.application.credentials.stripe[:publishable_key]
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
   end
 end
 
-module StripeRails
-  class Application < Rails::Application
-    config.load_defaults 5.2
-    config.generators.system_tests = nil
-    config.stripe.publishable_key = Rails.application.credentials.stripe[:publishable_key]
-    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
-  end 
-end
+# module StripeRails
+#   class Application < Rails::Application
+#     config.load_defaults 5.2
+#     config.generators.system_tests = nil
+#     config.stripe.publishable_key = Rails.application.credentials.stripe[:publishable_key]
+#     config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
+#   end 
+# end
