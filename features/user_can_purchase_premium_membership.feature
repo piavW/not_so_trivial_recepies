@@ -24,6 +24,7 @@ Feature: User can purchase premium membership
     Given I click on "Buy" for membership
     Then I should be on purchase page
     And I wait 3 seconds
+    And I fill in "Email" with "berg@email.se"
     And I fill in the Stripe field "CC Number" with "4242424242424242"
     And I fill in the Stripe field "Expiry date" with "01/2022"
     And I fill in the Stripe field "CVC" with "123"
