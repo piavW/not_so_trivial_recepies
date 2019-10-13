@@ -10,6 +10,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
+
 Bundler.require(*Rails.groups)
 
 module Foodapp
@@ -26,4 +27,13 @@ module Foodapp
     config.load_defaults 5.2
     config.generators.system_tests = nil
   end
+end
+
+module StripeRails
+  class Application < Rails::Application
+    config.load_defaults 5.2
+    config.generators.system_tests = nil
+    config.stripe.publishable_key = Rails.application.credentials.stripe[:publishable_key]
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
+  end 
 end

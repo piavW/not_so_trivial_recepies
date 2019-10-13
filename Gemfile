@@ -16,6 +16,7 @@ gem 'rest-client'
 gem 'devise'
 gem "haml-rails", "~> 1.0"
 gem 'omniauth-facebook'
+gem 'stripe-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -28,6 +29,7 @@ group :development, :test do
   gem 'webmock'
   gem 'selenium-webdriver'
   gem 'webdrivers', '~> 4.0'
+
 end
 
 group :development do
