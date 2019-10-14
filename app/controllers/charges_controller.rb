@@ -4,6 +4,7 @@ class ChargesController < ApplicationController
   end
 
   def create
+    binding.pry
     membership = Membership.find(params[:membership_id]) 
   end
 end

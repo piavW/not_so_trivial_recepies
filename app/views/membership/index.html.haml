@@ -4,8 +4,8 @@
 %div
   - @memberships.each do |membership|
     %div
-    = membership.title
-    = link_to "Buy", new_charge_path(id: membership.id)
+      = membership.title
+      = link_to "Buy", new_charge_path(id: membership.id)
    
 
 -# Soluton to find Premium using bindingPry, doesn't work with tests though.
